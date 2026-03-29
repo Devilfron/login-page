@@ -1,0 +1,30 @@
+body {
+    background: #26203b
+}
+
+:root {
+    --color-primary:
+    rgb(255, 255, 255 / 50%);
+    --color-muted:
+    rgb(255, 255, 255 / 30%);
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    translate: -50% 0;
+    bottom: -50px;
+    height: 80px;
+}
+
+svg {
+    width: 100vh;
+    height: 100vh;
+    transform:
+    scaleX(3)
+    scaleX(2.25);
+    transform-origin: bottom;
+    display: block;
+    pointer-events: none;
+}
