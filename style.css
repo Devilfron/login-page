@@ -89,7 +89,7 @@ input, button {
     position: relative;
 }
 
-lebel, input {
+label, input {
     transition: 0.3s;
 }
 
@@ -101,7 +101,7 @@ lebel, input {
     height: 50px;
 }
 
-.textbox lebel {
+.textbox label {
     position: absolute;
     top: 50%;
     left: 32px;
@@ -127,10 +127,12 @@ lebel, input {
      var (--color-primary);
 }
 
+<!-- условие ниже это анимированный label, который "прячется" в верхней части поля ввода, когда пользователь начинает печатать или поле уже содержит валидные данные. Это распространённый паттерн для "floating labels" в современных формах.-->
+
 .textbox
 input 
 :is(:focus,:not(:invalid))
-~ lebel {
+~ label {
     scale: 0.725;
     translate: -28px -38px;
     color: var (--color-primary);
