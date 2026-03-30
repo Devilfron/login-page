@@ -127,6 +127,11 @@ lebel, input {
      var (--color-primary);
 }
 
-.textbox {
-
+.textbox
+input 
+:is(:focus,:not(:invalid))
+~ lebel {
+    scale: 0.725;
+    translate: -28px -38px;
+    color: var (--color-primary);
 }
