@@ -69,3 +69,26 @@ svg {
     color: var(--color-muted);
     margin: 0 0 56px;
 }
+
+.card form {
+    display: grid;
+    gap: 18px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+input, button {
+    height: 50px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 16px;
+    border: 0;
+}
+
+.textbox {
+    position: relative;
+}
+
+lebel, input {
+    transition: 0.3s;
+}
