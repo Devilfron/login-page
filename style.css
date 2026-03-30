@@ -92,3 +92,11 @@ input, button {
 lebel, input {
     transition: 0.3s;
 }
+
+.textbox img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: 0 -50%;
+    height: 50px;
+}
