@@ -137,3 +137,38 @@ input
     translate: -28px -38px;
     color: var (--color-primary);
 }
+
+.card button {
+    position: relative;
+    color: #f9f9f9;
+    background: rgb(255, 255, 255 / 6%);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+button span, button p {
+    transition: 0.3s;
+}
+
+button span {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    translate: 10px -50%;
+    opacity: 0;
+    font-size: 22px;
+}
+
+button:hover {
+    background: rgb(255, 255, 255 / 9%);
+}
+
+button:hover p {
+    translate: -10px 0;
+}
+
+button:hover span{
+    opacity: 1;
+    translate: 20 -50%;
+}
+
