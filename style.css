@@ -144,9 +144,11 @@ label, input {
 
 .card button {
     position: relative;
-    color: #bbb;
+    font-size: 17px;
+    color: #f5b8b8;
     background: rgb(255, 255, 255 / 6%);
     border-radius: 12px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -173,7 +175,7 @@ button:hover p {
 
 button:hover span{
     opacity: 1;
-    translate: 20 -50%;
+    translate: 20px -50%;
 }
 
 .card a {
