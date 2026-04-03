@@ -97,7 +97,7 @@ label, input {
     top: 50%;
     left: 0;
     translate: 0 -50%;
-    height: 50px;
+    height: 30px;
 }
 
 .textbox label {
@@ -114,8 +114,7 @@ label, input {
     width: 100%;
     padding-left: 32px;
     background: transparent;
-    border-bottom: 1px solid 
-        rgb(255, 255, 255 / 10%);
+    border-bottom: 1px solid rgb(255, 255, 255 / 10%);
     box-shadow: 0 0 0 2px transparent;
 }
 
@@ -136,7 +135,7 @@ input
 
 .card button {
     position: relative;
-    color: #f9f9f9;
+    color: #bbb;
     background: rgb(255, 255, 255 / 6%);
     border-radius: 12px;
     transition: 0.3s;
