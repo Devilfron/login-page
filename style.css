@@ -1,10 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: #26203b
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    background: #26203b;
+    font-family: "Euclid Circular B", "Poppins";
+    color: #f9f8fa;
+    overflow: hidden;
 }
 
 :root {
@@ -46,6 +54,8 @@ svg {
     align-items: center;
     text-align: center;
     background: linear-gradient(#1c182b, #2d2546);
+    backdrop-filter: blur(38px);
+    box-shadow: 0 40px 30px rgb(0 0 0 / 10%);
 }
 
 .card img.logo {
@@ -77,7 +87,7 @@ svg {
 }
 
 input, button {
-    height: 50px;
+    height: 56px;
     font-family: inherit;
     font-size: 16px;
     padding: 0 16px;
@@ -97,7 +107,7 @@ label, input {
     top: 50%;
     left: 0;
     translate: 0 -50%;
-    height: 30px;
+    height: 26px;
 }
 
 .textbox label {
@@ -107,7 +117,7 @@ label, input {
     translate: 0 -50%;
     transform-origin: 0 50%;
     pointer-events: none;
-    color: var (--color-muted);
+    color: var(--color-muted);
 }
 
 .textbox input {
@@ -115,22 +125,21 @@ label, input {
     padding-left: 32px;
     background: transparent;
     border-bottom: 1px solid rgb(255, 255, 255 / 10%);
+    outline: none;
+    color: inherit;
     box-shadow: 0 0 0 2px transparent;
 }
 
 .textbox input:focus {
-    border-color: var (--color-primary);
+    border-color: var(--color-primary);
 }
 
 /* <!-- условие ниже это анимированный label, который "прячется" в верхней части поля ввода, когда пользователь начинает печатать или поле уже содержит валидные данные. Это распространённый паттерн для "floating labels" в современных формах.--> */
 
-.textbox
-input 
-:is(:focus,:not(:invalid))
-~ label {
+.textbox input:is(:focus, :not(:invalid)) ~ label {
     scale: 0.725;
     translate: -28px -38px;
-    color: var (--color-primary);
+    color: var(--color-primary);
 }
 
 .card button {
