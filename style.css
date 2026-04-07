@@ -207,7 +207,7 @@ button:hover span{
     color: rgb(255, 255, 255 / 60%);
 }
 
-.telegram-login {
+.tg-login {
     margin-top: 15px;
     display: flex;
     justify-content: center;
