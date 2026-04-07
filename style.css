@@ -29,10 +29,10 @@ body {
     z-index: 0;
     /* left: 50%; */
     left: 0;
-    top: 1000px;
+    top: 1500px;
     /* translate: -0% 0; */
     bottom: 150px;
-    height: 150px;
+    height: 250px;
     transform: translateY(-100px);
     opacity: 0.8;
 }
